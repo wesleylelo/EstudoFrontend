@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flutuantes</title>
+<style type="text/css">
+    .conteudo{
+        background: blue;
+        border: 1px solid gray;
+        width: 150px;
+        height: 150px;
+        float: right;
+        margin: 10px;
+    }
+    .clear{
+        clear: both;
+    }
+    .conteudo-zero{
+        background:red;
+        border: 1px solid gray;
+        width: 150px;
+        height: 150px;
+        
+        margin: 10px;
+    }
+    /*
+    .conteudo1{
+        background:red;
+        border: 1px solid gray;
+        width: 150px;
+        height: 150px;
+        float: left;
+        padding: 10px;
+    }*/
+    #principal{
+        border:1px solid red;
+        background: green;
+    }
+    /* Não funciona, vai ficar branco como background, pois flutuante dentro de uma div não funciona. Para funcionar
+    o background, deve-se criar uma div, dentro da principal, da seguinte forma: <div>class="clear"</div>, sendo a class clear a limpeza do flutuante da divisão principal*/
+</style>
+
+</head>
+<body>
+    <div id="principal">
+<div class="conteudo">
+    Conteudo
+</div>    
+<div class="conteudo">
+    Conteudo 2
+</div>
+<div class="conteudo"> 
+    Conteúdo 3
+</div>
+<p class="clear">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in sapien sit amet leo hendrerit accumsan eget sit amet purus. Curabitur porttitor, ipsum a placerat malesuada, elit justo semper massa, sed elementum urna mauris nec lectus. Cras ullamcorper purus a libero molestie, non blandit tortor lobortis. Vestibulum sed turpis diam. Aenean vel nibh sit amet justo iaculis efficitur. Donec lobortis nec velit eu blandit. Nam eget maximus nunc. Duis pretium ligula quis luctus lobortis. Pellentesque ac augue ornare, tristique lorem ac, placerat metus.
+</p>
+<!--
+<divclass = "clear"> 
+     aa
+</div>
+-->
+</div>
+</body>
+</html>

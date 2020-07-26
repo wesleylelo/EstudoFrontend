@@ -10,6 +10,7 @@
         width: 800px;
         margin: 10px auto;
         padding: 10px;
+        position: relative;
     }
     body{
         background: #007fcf;
@@ -28,14 +29,28 @@ p{
     top: 20px;
     left: 80px;
 }
+.fixed{
+    position: fixed;
+    border: 1px solid red;
+    right: 0px;
+    top: 0px;
+    background: #f2f2f2;
+}
+.absolute{
+    position: absolute;
+    border: 1px solid red;
+    top: 0px;
+    right: 20px;
+    background: #f2f2f2;
+}
     </style>
 </head>
 <body>
         <div id="container">
 <h1> Posicionamentos</h1>
 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia mollitia dolorem amet aut quia, esse excepturi consectetur quibusdam, qui a dolor deserunt? Ipsam autem nesciunt aliquid iste, facilis quasi neque.</p>
-<p class="relative"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia mollitia dolorem amet aut quia, esse excepturi consectetur quibusdam, qui a dolor deserunt? Ipsam autem nesciunt aliquid iste, facilis quasi neque.</p>
-<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia mollitia dolorem amet aut quia, esse excepturi consectetur quibusdam, qui a dolor deserunt? Ipsam autem nesciunt aliquid iste, facilis quasi neque.</p>
+<p class="absolute"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia mollitia dolorem amet aut quia, esse excepturi consectetur quibusdam, qui a dolor deserunt? Ipsam autem nesciunt aliquid iste, facilis quasi neque.</p>
+<p class="fixed"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia mollitia dolorem amet aut quia, esse excepturi consectetur quibusdam, qui a dolor deserunt? Ipsam autem nesciunt aliquid iste, facilis quasi neque.</p>
 
         </div>
 </body>

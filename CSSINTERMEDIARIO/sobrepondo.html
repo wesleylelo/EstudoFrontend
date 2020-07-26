@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sobrepondo elementos </title>
+    <style type="text/css">
+.conteudo1{
+    border: 1px solid red;
+    background: orange;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+}
+.conteudo2{
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 2;
+    /* contexto de empilhamento*/
+}
+.conteudo3{
+    border: 1px solid red;
+    background: green;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 160px;
+    left: 160px;
+    z-index: 3 ;
+}
+    </style>
+</head>
+<body>
+    <div class="conteudo1">
+        Conteúdo
+    </div>
+    <div class="conteudo2">
+        Conteúdo
+    </div>
+    <div class="conteudo3">
+        Conteúdo
+    </div>
+</body>
+</html>

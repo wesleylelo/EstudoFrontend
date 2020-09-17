@@ -1,0 +1,22 @@
+* {
+    border: 1px solid red;
+}
+h1{
+    color: green;
+}
+.verde{
+    color: green;
+}
+p.verde{
+    color: green;
+}
+#cabecalho {
+    border: 2px solid red;
+}
+li>a{
+    color: red;
+    text-decoration: none;
+}
+p a{
+    color: green;
+}
